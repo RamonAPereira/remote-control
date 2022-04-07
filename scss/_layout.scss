@@ -1,0 +1,28 @@
+main {
+  min-height: 100vh;
+  max-width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.remote {
+  width: 100%;
+  height: 100%;
+}
+
+.header {
+  background-color: red;
+  padding: 1.5rem 0;
+  text-align: center;
+  min-height: 5vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer {
+  background-color: black;
+  padding: 1.5rem 0;
+  text-align: center;
+  min-height: 15vh;
+}

@@ -1,0 +1,104 @@
+:root {
+  font-family: Helvetica, sans-serif;
+  color: white; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0; }
+
+h1,
+h2 {
+  text-transform: uppercase;
+  font-size: 1.2rem; }
+
+main {
+  min-height: 100vh;
+  max-width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; }
+
+.remote {
+  width: 100%;
+  height: 100%; }
+
+.header {
+  background-color: red;
+  padding: 1.5rem 0;
+  text-align: center;
+  min-height: 5vh;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.footer {
+  background-color: black;
+  padding: 1.5rem 0;
+  text-align: center;
+  min-height: 15vh; }
+
+.play-control {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  min-height: 80vh; }
+  .play-control__back-forward {
+    display: flex;
+    gap: 4rem; }
+  .play-control__play {
+    background-image: url("../assets/image-play.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    border: none;
+    background-color: transparent;
+    width: 10rem;
+    height: 10rem; }
+  .play-control__backward {
+    background-image: url("../assets/image-backward.svg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    border: none;
+    background-color: transparent;
+    width: 5rem;
+    height: 5rem; }
+  .play-control__forward {
+    background-image: url("../assets/image-forward.svg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    border: none;
+    background-color: transparent;
+    width: 5rem;
+    height: 5rem; }
+
+.volume-control__down {
+  background-image: url("../assets/image-down.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+  border: none;
+  background-color: transparent;
+  width: 2.5rem;
+  height: 2.5rem;
+  filter: invert(100%) sepia(2%) saturate(2185%) hue-rotate(139deg) brightness(116%) contrast(100%); }
+
+.volume-control__up {
+  background-image: url("../assets/image-up.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+  border: none;
+  background-color: transparent;
+  width: 2.5rem;
+  height: 2.5rem;
+  filter: invert(100%) sepia(2%) saturate(2185%) hue-rotate(139deg) brightness(116%) contrast(100%); }

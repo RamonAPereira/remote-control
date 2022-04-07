@@ -1,0 +1,54 @@
+.play-control {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  min-height: 80vh;
+
+  &__back-forward {
+    display: flex;
+    gap: 4rem;
+  }
+
+  &__play {
+    background-image: url("../assets/image-play.png");
+    @include bg;
+    width: 10rem;
+    height: 10rem;
+  }
+
+  &__backward {
+    background-image: url("../assets/image-backward.svg");
+    @include bg;
+    width: 5rem;
+    height: 5rem;
+  }
+
+  &__forward {
+    background-image: url("../assets/image-forward.svg");
+    @include bg;
+    width: 5rem;
+    height: 5rem;
+  }
+}
+
+.volume-control {
+  &__down {
+    background-image: url("../assets/image-down.svg");
+    @include bg;
+    width: 2.5rem;
+    height: 2.5rem;
+    filter: invert(100%) sepia(2%) saturate(2185%) hue-rotate(139deg)
+      brightness(116%) contrast(100%);
+  }
+
+  &__up {
+    background-image: url("../assets/image-up.svg");
+    @include bg;
+    width: 2.5rem;
+    height: 2.5rem;
+    filter: invert(100%) sepia(2%) saturate(2185%) hue-rotate(139deg)
+      brightness(116%) contrast(100%);
+  }
+}
